@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LEONARDO FINOTTI | High Performance Coaching</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-tertiary": "#2f3131",
+                    "error": "#ffb4ab",
+                    "inverse-surface": "#e5e2e1",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-container": "#636565",
+                    "surface-container": "#202020",
+                    "error-container": "#93000a",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#bab8b7",
+                    "on-primary-container": "#556d00",
+                    "on-surface": "#e5e2e1",
+                    "tertiary": "#ffffff",
+                    "on-error": "#690005",
+                    "primary-container": "#c3f400",
+                    "on-secondary": "#313030",
+                    "primary": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary-fixed": "#161e00",
+                    "primary-fixed": "#c3f400",
+                    "surface-container-highest": "#353535",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-low": "#1b1b1c",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "outline-variant": "#444933",
+                    "on-secondary-fixed-variant": "#474646",
+                    "surface-bright": "#393939",
+                    "surface-dim": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "outline": "#8e9379",
+                    "surface-variant": "#353535",
+                    "on-primary-fixed-variant": "#3c4d00",
+                    "primary-fixed-dim": "#abd600",
+                    "tertiary-fixed": "#e2e2e2",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary": "#283500",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-container": "#e2e2e2",
+                    "background": "#131313",
+                    "inverse-primary": "#506600",
+                    "surface-tint": "#abd600",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "secondary": "#c8c6c5",
+                    "secondary-container": "#4a4949",
+                    "surface": "#131313",
+                    "on-surface-variant": "#c4c9ac",
+                    "inverse-on-surface": "#303030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px",
+                    "container-max": "1280px",
+                    "base": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Bebas Neue"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["Bebas Neue"],
+                    "headline-lg": ["Bebas Neue"],
+                    "headline-lg-mobile": ["Bebas Neue"],
+                    "title-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "display-lg": ["80px", {"lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(19, 19, 19, 0.4), rgba(19, 19, 19, 1));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/95 dark:bg-background/95 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<span class="font-display-lg text-headline-md tracking-tighter text-primary dark:text-primary">LEONARDO FINOTTI</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-150 font-label-md text-label-md" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-150 font-label-md text-label-md" href="#services">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-150 font-label-md text-label-md" href="#pricing">Pricing</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-150 font-label-md text-label-md" href="#program">12-Week Program</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-150 font-label-md text-label-md" href="#diet">Diet Plan</a>
+</div>
+<button class="bg-primary-container text-on-primary-fixed font-bold px-6 py-2 rounded-lg hover:brightness-110 active:scale-95 transition-all duration-150 font-label-md text-label-md">
+                GET STARTED
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A powerful cinematic wide shot of a high-end personal training gym environment with dramatic low-key lighting. The atmosphere is intense and professional, featuring shadows and highlights on steel equipment. The color palette is dominated by deep blacks and cool greys with sharp electric green light accents creating a performance-driven aesthetic. The mood is focused and motivational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARrlax-k5d60U57txQvX3f_sBdlGw_EpU2OcOHZXOlWzxmOxDMWHFKLLI8_1wUooiWJjfcwu4YLz2N1WDmDG-h1h61-A-_5rDubWwJfL9D2TN2yNtkg6U7OzeyhiSMC9Y-tAg0-nJJgDBgBAFEvjsJYTWkYnPrQ47E-XQ7d2hk0ruOqBp-gIuGTYt9VR0_8NT8MhwIcjYeQlWUe8XfFQb13xYS8NbdCtz4BmxrQWTSFP1UPHkfaAzx6dF9dawj1R3xNMdnBTDh4A"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-7">
+<span class="inline-block px-4 py-1 bg-primary-container/20 border border-primary-container/30 text-primary-container rounded-full font-label-md text-label-md mb-6 tracking-wider">ELITE PERFORMANCE COACHING</span>
+<h1 class="font-display-lg text-[64px] md:text-display-lg leading-none mb-6 uppercase">
+                    Transforme seu corpo e alcance sua <span class="text-primary-container">melhor versão</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                    Metodologia científica focada em hipertrofia máxima e performance atlética. Treine com quem entende a fisiologia do seu resultado.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary-fixed font-bold px-10 py-4 rounded-xl hover:brightness-110 active:scale-95 transition-all duration-150 text-title-lg font-title-lg flex items-center justify-center gap-2">
+                        COMEÇAR MINHA JORNADA
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border-2 border-white text-white font-bold px-10 py-4 rounded-xl hover:bg-white/10 active:scale-95 transition-all duration-150 text-title-lg font-title-lg">
+                        VER RESULTADOS
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 md:py-32 bg-background" id="about">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a fitness coach with an athletic build standing in a modern training facility. He is dressed in premium black athletic wear, looking focused and authoritative. The lighting is sharp, emphasizing muscle definition and a professional demeanor. The background is slightly blurred with professional gym equipment visible in dark tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCseorwE32Y9naIBQo7VT9pggZQTmZDy2aI2IlsGbkqlafmP0sYFUPumMFOCfJlajZrkXsBsBVHtzOaivuQKU572XyisQN7QbQtS3-xp8yULUV8EvhfPaIUbKdWWdr44EWVZXsXRyHArlw4hNm_Qax3L5ZAP5ZxFpZqpUZ8sccjN1ktiJBlCdUy2ELBWTcb9G3J3gzzkcXmTEyINY5bzfMJaUqYKD4BJfxsetPWqmr9zwmi9R34sKXmHRO_eoTEApZyI21-R4w75w"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-surface-container-high p-6 rounded-xl border border-outline-variant/30 hidden lg:block">
+<p class="font-display-lg text-headline-md text-primary-container leading-none">+10 ANOS</p>
+<p class="font-label-md text-on-surface-variant">EXPERIÊNCIA REAL</p>
+</div>
+</div>
+<div class="md:col-span-7">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-8 uppercase">SOBRE LEONARDO FINOTTI</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    Sou Léo, apaixonado por saúde e condicionamento físico. Minha missão é traduzir a ciência do exercício em resultados visíveis e duradouros para meus alunos. Não acredito em atalhos, acredito em técnica, intensidade e constância.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="school">school</span>
+<div>
+<h4 class="font-title-lg text-title-lg mb-1">Educação Física</h4>
+<p class="text-on-surface-variant">Graduação focada em biomecânica.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="monitoring">monitoring</span>
+<div>
+<h4 class="font-title-lg text-title-lg mb-1">Fisiologia</h4>
+<p class="text-on-surface-variant">Pós-graduado em Fisiologia do Exercício.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="fitness_center">fitness_center</span>
+<div>
+<h4 class="font-title-lg text-title-lg mb-1">Alta Performance</h4>
+<p class="text-on-surface-variant">Especialização em força e potência.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="verified">verified</span>
+<div>
+<h4 class="font-title-lg text-title-lg mb-1">+500 Alunos</h4>
+<p class="text-on-surface-variant">Transformações reais comprovadas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface-container-lowest" id="services">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-4">MÉTODOS DE TREINAMENTO</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Soluções adaptadas ao seu estilo de vida e objetivos específicos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 bg-surface-container border border-outline-variant/30 rounded-2xl p-10 flex flex-col justify-between group overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" data-icon="person_search">person_search</span>
+<h3 class="font-display-lg text-headline-md mb-4 uppercase">Consultoria Individualizada</h3>
+<p class="text-on-surface-variant text-body-lg max-w-md">Análise completa do seu perfil, histórico e metas para criar o plano perfeito.</p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-primary-container scale-75" data-icon="check_circle">check_circle</span> Ajustes semanais</li>
+<li class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-primary-container scale-75" data-icon="check_circle">check_circle</span> Suporte direto</li>
+</ul>
+</div>
+<img class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-10 group-hover:opacity-20 transition-opacity" data-alt="Close up of a focused individual during a consultation, with tablet screens showing performance data and heart rate charts. The lighting is clinical and professional, emphasizing a data-driven approach to fitness. The palette uses deep greys and highlights of electric green to represent digital progress and health metrics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Vj64aRMnQDV4kovFlahyiMYMTKmyECOPIBp7DfyJ2057QXRHM-CwWCRGcoTMAlNeXwBSBv6sr9S0C3Q7ZERUHX8njQop11c2mT34gP9z15V3GVQbm8N11_p_szqE13FKFxPl9mo7cSuH0vBonbhPRyvoa-smu-SOQTjvyL2GwQEBEkABgKQKfyg-xGVh-AZKduq52JZTZSWAfN1c1zPQ1zNAQLwp0FskI5w8SjPL3HEVJMWjdi8x9-aKPxC3q_AoUFS8iYJ_uQ"/>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-2xl p-10 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" data-icon="video_chat">video_chat</span>
+<h3 class="font-display-lg text-headline-md mb-4 uppercase">Online Training</h3>
+<p class="text-on-surface-variant">Treine de qualquer lugar do mundo com supervisão técnica via app exclusivo.</p>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-2xl p-10 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" data-icon="exercise">exercise</span>
+<h3 class="font-display-lg text-headline-md mb-4 uppercase">Presencial</h3>
+<p class="text-on-surface-variant">Acompanhamento direto em academia parceira para correção técnica imediata.</p>
+</div>
+<div class="md:col-span-2 bg-primary-container border border-primary-container rounded-2xl p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<h3 class="font-display-lg text-headline-md text-on-primary-fixed mb-4 uppercase">PROGRAMAS ESPECÍFICOS</h3>
+<p class="text-on-primary-fixed-variant text-body-lg">Protocolos prontos validados para objetivos de perda de gordura ou ganho de massa bruta.</p>
+</div>
+<button class="bg-on-primary-fixed text-primary-container font-bold px-8 py-4 rounded-xl hover:scale-105 transition-transform whitespace-nowrap">CONHECER PROGRAMAS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Differences (Benefits) -->
+<section class="py-24 bg-background">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/20 hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="qr_code_2">qr_code_2</span>
+<h4 class="font-title-lg text-title-lg mb-2">App com Vídeos</h4>
+<p class="text-on-surface-variant">Acesso a todos os exercícios filmados em HD para nunca errar a execução.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/20 hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="forum">forum</span>
+<h4 class="font-title-lg text-title-lg mb-2">Suporte WhatsApp</h4>
+<p class="text-on-surface-variant">Dúvidas respondidas diretamente por mim, sem intermediários ou bots.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/20 hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="history_edu">history_edu</span>
+<h4 class="font-title-lg text-title-lg mb-2">Treino Individual</h4>
+<p class="text-on-surface-variant">Nada de fichas prontas. Cada série e repetição é pensada para você.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/20 hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="speed">speed</span>
+<h4 class="font-title-lg text-title-lg mb-2">Avaliações</h4>
+<p class="text-on-surface-variant">Monitoramento constante de evolução por fotos e medidas antropométricas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24 bg-surface-container-lowest" id="pricing">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4">Escolha seu Plano</h2>
+<p class="text-on-surface-variant">Investimento direto na sua saúde e autoestima.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mensal -->
+<div class="bg-surface-container border border-outline-variant/20 p-10 rounded-2xl flex flex-col">
+<h3 class="font-display-lg text-headline-md mb-2">MENSAL</h3>
+<p class="text-on-surface-variant mb-8">Foco no início imediato</p>
+<div class="mb-8">
+<span class="text-headline-lg font-headline-lg">R$64,90</span>
+<span class="text-on-surface-variant">/mês</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Treino via App</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Suporte WhatsApp</li>
+</ul>
+<button class="w-full border-2 border-primary-container text-primary-container font-bold py-4 rounded-xl hover:bg-primary-container hover:text-on-primary-fixed transition-colors">ASSINAR AGORA</button>
+</div>
+<!-- Trimestral (Highlighted) -->
+<div class="bg-surface-container border-t-4 border-primary-container p-10 rounded-2xl flex flex-col relative scale-105 shadow-2xl z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-container text-on-primary-fixed px-4 py-1 rounded-full font-bold text-xs uppercase tracking-widest">Mais Escolhido</div>
+<h3 class="font-display-lg text-headline-md mb-2">TRIMESTRAL</h3>
+<p class="text-on-surface-variant mb-8">Melhor custo-benefício</p>
+<div class="mb-8">
+<span class="text-headline-lg font-headline-lg">R$39,90</span>
+<span class="text-on-surface-variant">/mês</span>
+<p class="text-primary-container font-bold text-sm">3x R$39,90 ou R$119,70 à vista</p>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Todos os benefícios Mensais</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Avaliação Mensal Detalhada</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Guia de Suplementação</li>
+</ul>
+<button class="w-full bg-primary-container text-on-primary-fixed font-bold py-4 rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary-container/20">QUERO ESTE PLANO</button>
+</div>
+<!-- Bimestral -->
+<div class="bg-surface-container border border-outline-variant/20 p-10 rounded-2xl flex flex-col">
+<h3 class="font-display-lg text-headline-md mb-2">BIMESTRAL</h3>
+<p class="text-on-surface-variant mb-8">Planejamento intermediário</p>
+<div class="mb-8">
+<span class="text-headline-lg font-headline-lg">R$90,00</span>
+<span class="text-on-surface-variant">/bimestre</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Treino via App</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Suporte WhatsApp</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-container" data-icon="done">done</span> Ajuste de Carga</li>
+</ul>
+<button class="w-full border-2 border-primary-container text-primary-container font-bold py-4 rounded-xl hover:bg-primary-container hover:text-on-primary-fixed transition-colors">ASSINAR AGORA</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 12-Week Program Section -->
+<section class="py-24 bg-background" id="program">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-surface-container-high rounded-3xl overflow-hidden border border-outline-variant/30 grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 md:p-20">
+<span class="text-primary-container font-bold tracking-widest uppercase mb-4 block">PROTOCOLO ELITE</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-6 uppercase">12 SEMANAS DE <br/><span class="text-primary-container">HIPERTROFIA E DEFINIÇÃO</span></h2>
+<p class="text-on-surface-variant mb-10 text-body-lg">
+                        O programa definitivo para quem quer mudar o shape em tempo recorde. Protocolo validado que alterna fases de força, volume e densidade muscular.
+                    </p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="update">update</span>
+<span class="text-on-surface">Atualizações de treino a cada 4 semanas</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="chat">chat</span>
+<span class="text-on-surface">Suporte WhatsApp 24/7 para dúvidas</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="price_check">price_check</span>
+<span class="text-on-surface font-bold text-xl">Apenas R$29,90</span>
+</div>
+</div>
+<button class="bg-primary-container text-on-primary-fixed font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform text-title-lg">
+                        GARANTIR MINHA VAGA
+                    </button>
+</div>
+<div class="relative min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="Intense high-contrast photograph of a powerful muscular back during a row exercise. The lighting is very dramatic, with deep shadows and highlights on the skin and muscles. The scene takes place in a professional, dark-themed gym. The aesthetic is gritty, performance-focused, and aspirational, highlighting the results of the 12-week program." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBicehLA9aFn9II8GRUsKGKU2E4gymAYc4CGHF8E7xab1RGCzTeN0uEkI-TLj1RQnD2Z3AB7_1FjHm0oxFDw5Xxn38KQTtqSlp5tUFggsugm1Dbsh98uTTG3N-mggObY8_ebWzoYwFcOZ1sjmNuJJStQDK46pTFhOUiyHW3CpTvj-4Yx4t8cSRYzfWggyF7YjefkY6O8y12isgrkjvwrnxLFT2BelVNOk3FYONAr9T-DZ0C5a6YVIo6koenZD3lSR-hsmXlm98n4A"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-high to-transparent hidden lg:block"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Diet & E-book Offer -->
+<section class="py-24 bg-surface-container-lowest" id="diet">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Diet Card -->
+<div class="bg-surface-container border border-outline-variant/30 p-12 rounded-3xl relative overflow-hidden group">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6" data-icon="restaurant">restaurant</span>
+<h3 class="font-display-lg text-headline-md mb-4 uppercase">Plano Alimentar Individual</h3>
+<p class="text-on-surface-variant mb-8">Não existe resultado sem nutrição. Elaboro sua dieta baseada na sua rotina e preferências, calculando cada macro para o seu objetivo.</p>
+<div class="text-3xl font-display-lg text-primary mb-8">POR R$100,00</div>
+<button class="text-primary-container font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
+                    Solicitar Dieta <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span>
+</button>
+</div>
+<!-- E-book Card -->
+<div class="bg-surface-container border border-outline-variant/30 p-12 rounded-3xl relative overflow-hidden group">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6" data-icon="menu_book">menu_book</span>
+<h3 class="font-display-lg text-headline-md mb-4 uppercase">E-book: Além da Hipertrofia</h3>
+<p class="text-on-surface-variant mb-8">Estratégias avançadas de treinamento e mentalidade para quem estagnou nos resultados. O guia definitivo do avançado.</p>
+<div class="text-3xl font-display-lg text-primary mb-8">CONTEÚDO EXCLUSIVO</div>
+<button class="text-primary-container font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
+                    Saiba Mais <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-background relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-container/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center relative z-10">
+<h2 class="font-display-lg text-display-lg leading-tight mb-8 uppercase max-w-4xl mx-auto">PARE DE TENTAR. <br/><span class="text-primary-container">COMECE A TREINAR DE VERDADE.</span></h2>
+<p class="text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">Seu corpo é seu maior patrimônio. Invista no profissional que vai te levar ao próximo nível com segurança e eficiência.</p>
+<button class="bg-primary-container text-on-primary-fixed font-bold px-12 py-5 rounded-xl hover:brightness-110 hover:scale-105 active:scale-95 transition-all text-title-lg shadow-xl shadow-primary-container/20">
+                COMEÇAR MINHA JORNADA
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-12 border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-base px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center md:text-left">
+<span class="font-display-lg text-headline-md text-primary block mb-2">LEONARDO FINOTTI</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 LEONARDO FINOTTI. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">WhatsApp</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">YouTube</a>
+</div>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
